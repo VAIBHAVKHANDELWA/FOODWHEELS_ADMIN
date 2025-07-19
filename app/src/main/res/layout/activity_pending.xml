@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="10dp"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+
+    tools:context=".additemactivity">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_arrow"
+        android:background="@color/white"
+        android:layout_marginTop="25dp"
+        android:id="@+id/back"
+        android:layout_marginLeft="12dp">
+    </ImageButton>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pending Orders"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/txttttt"
+
+        android:textColor="@color/black"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txttttt"
+        android:layout_marginTop="18dp"
+
+        android:id="@+id/rcyl"
+
+
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".signup">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/img_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FOODWHEELS"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bringing Flavours to Your Door"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="4dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="26sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:gravity="center" />
+
+            <!-- Dropdown for Location -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/location_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:boxStrokeColor="#3E3C3C"
+                app:boxStrokeWidth="1dp"
+                style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:background="@drawable/edittextstyle">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="Select Your Location"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:padding="14dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Input Fields -->
+            <EditText
+                android:id="@+id/resname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edittextstyle"
+                android:hint="Enter Restaurant Name"
+                android:textColor="#000000"
+                android:textColorHint="#888888"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/user_svgrepo_com"
+                android:drawablePadding="14dp"
+                android:padding="12dp"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edittextstyle"
+                android:hint="Enter Your Name"
+                android:textColor="#000000"
+                android:textColorHint="#888888"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/user_svgrepo_com"
+                android:drawablePadding="14dp"
+                android:padding="12dp"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edittextstyle"
+                android:hint="Enter a Valid Email"
+                android:textColor="#000000"
+                android:textColorHint="#888888"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="14dp"
+                android:padding="12dp"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edittextstyle"
+                android:hint="Enter Password"
+                android:textColor="#000000"
+                android:textColorHint="#888888"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/ic_pass"
+                android:drawablePadding="14dp"
+                android:padding="12dp"
+                android:inputType="textPassword" />
+
+            <!-- Signup Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/button"
+                android:text="Create Account"
+                android:textColor="#3E3C3C"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Already Have Account -->
+            <TextView
+                android:id="@+id/signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already Have An Account?"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginTop="24dp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:layout_gravity="center_horizontal"
+                android:background="?attr/selectableItemBackground"
+                android:padding="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "683151401598",
+    "project_id": "foodwheels-admin",
+    "storage_bucket": "foodwheels-admin.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683151401598:android:8c7cfed7b08c0d6dd42e2f",
+        "android_client_info": {
+          "package_name": "com.example.foodwheels_adminpanel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI52KScI25sHLTJjg4Gknw4qNEzJLOCyk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

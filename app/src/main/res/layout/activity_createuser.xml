@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".login">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_arrow"
+        android:background="@color/white"
+        android:layout_marginTop="25dp"
+        android:id="@+id/back"
+        android:layout_marginLeft="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="65dp"
+            android:src="@drawable/img_2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOODWHEELS"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/txt"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bringing Flavours to Your Door"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create a New User"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:gravity="center" />
+        <EditText
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextstyle"
+            android:textSize="18sp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="22dp"
+            android:padding="12dp"
+            android:hint="Enter your name"
+            android:textColorHint="#888888"
+
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="22dp"
+            android:textColor="#000000" />
+
+        <!-- Email Input -->
+        <EditText
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextstyle"
+            android:textSize="18sp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="22dp"
+            android:padding="12dp"
+            android:hint="Enter a Valid Email"
+            android:textColorHint="#888888"
+
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="22dp"
+            android:textColor="#000000" />
+
+        <!-- Password Input -->
+        <EditText
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextstyle"
+            android:textSize="18sp"
+            android:inputType="textPassword"
+            android:layout_marginTop="15dp"
+            android:padding="12dp"
+            android:hint="Enter Password"
+            android:textColorHint="#888888"
+
+            android:drawableStart="@drawable/ic_pass"
+            android:drawablePadding="12dp"
+            android:textColor="#000000" />
+
+
+
+       <androidx.appcompat.widget.AppCompatButton
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="50dp"
+           android:id="@+id/save"
+           android:text="Click here to save user"
+           android:layout_marginTop="50dp"
+           android:background="@drawable/button"/>
+    </LinearLayout>
+</RelativeLayout>
