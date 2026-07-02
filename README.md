@@ -1,87 +1,176 @@
 # 🛠️ FoodWheels Admin App
 
-**FoodWheels Admin App** is the backend control panel of the FoodWheels ecosystem. It empowers administrators and vendors to manage restaurants, orders, menus, and delivery logistics efficiently from a mobile platform.
+<div align="center">
+
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white)
+
+### Administrative Control Panel for the FoodWheels Ecosystem
+
+An Android-based administrative platform built using **Kotlin, Java, Firebase, and Android Studio** that enables restaurant owners and administrators to efficiently manage menus, vendors, and customer orders in real time.
+
+</div>
 
 ---
 
-## 📌 Overview
+# 📌 Overview
 
-This companion app to the **FoodWheels** food delivery app enables seamless management of:
+FoodWheels Admin App serves as the backend management application for the **FoodWheels food delivery ecosystem**.
 
-- Vendor profiles
-- Menu items
-- Live orders
-- Order fulfillment
-- Delivery assignment (planned)
+The application provides restaurant owners and platform administrators with a centralized interface to oversee restaurant operations, manage menu items, monitor incoming orders, and maintain vendor profiles.
 
-It’s built for **restaurant owners**, **delivery coordinators**, and **platform administrators** to have full operational control.
+It is designed with scalability, real-time synchronization, and operational efficiency in mind.
 
 ---
 
-## 🚀 Key Features
+# ✨ Features
 
-- 📦 View and manage all incoming orders  
-- 📝 Add/Edit/Delete menu items dynamically  
-- 🏪 Approve or suspend vendor listings  
-- ⏱️ Track order status and mark as completed  
-- 📊 Dashboard for analytics *(planned)*  
-- 🛠 Real-time updates with Firebase *(WIP)*
+### 📦 Order Management
 
----
+Monitor incoming orders in real time and manage the complete order lifecycle.
 
-## 📊 Admin App Stats
+### 🍔 Menu Administration
 
-| Metric                | Value        |
-|------------------------|--------------|
-| 📱 Platform            | Android      |
-| 👨‍💻 Developer          | Solo (You)   |
-| ✅ Completion Status    | ~70%         |
-| 📈 Admin Screens       | 5+           |
-| 💡 Planned Features    | 4+           |
+Add, update, categorize, and remove menu items dynamically.
 
----
+### 🏪 Vendor Management
 
-## 🛠 Tech Stack
+Manage restaurant listings and maintain vendor information.
 
-- **Frontend:** Android Studio (Java/Kotlin)  
-- **Backend:** Firebase Realtime Database *(under integration)*  
-- **UI:** Clean Admin Panel Design using Material Components
+### 🔄 Real-Time Synchronization
+
+Utilizes Firebase Realtime Database to instantly reflect changes across connected devices.
+
+### 🚚 Delivery Coordination 
+
+Assign deliveries and track logistics efficiently.
 
 ---
 
-## 🔐 Admin Roles (Planned)
+# 📊 Project Highlights
 
-- **Super Admin:** Full access including analytics  
-- **Vendor Admin:** Access to own menu and orders  
-- **Delivery Lead:** Assign deliveries and track riders
-
----
-
-## 📸 Screenshots
-
-> *(Add screenshots after design completion)*
-
-
----
-
-## 🚧 Project Status
-
-🟡 **In Progress**  
-- Current version supports basic CRUD for menu and orders  
-- Upcoming: Analytics, Delivery mapping, Role-based access
+| Metric | Details |
+|--------|---------|
+| Platform | Android |
+| Language | Kotlin & Java |
+| IDE | Android Studio |
+| Database | Firebase Realtime Database |
+| Authentication | Firebase Authentication |
+| Architecture | Firebase Driven |
+| Developer | Vaibhav Khandelwal |
 
 ---
 
-## 👨‍💼 Intended Users
+# 🛠️ Tech Stack
 
-- Restaurant Managers  
-- Platform Admins  
-- Delivery Coordinators
+| Category | Technology |
+|----------|------------|
+| Language | Kotlin |
+| Secondary Language | Java |
+| IDE | Android Studio |
+| Database | Firebase Realtime Database |
+| Authentication | Firebase Authentication |
+| Version Control | Git & GitHub |
 
 ---
 
-## 📄 License
+# 🏗️ System Architecture
 
-MIT License  
-© 2025 Vaibhav Khandelwal
+```text
+Admin User
+     │
+     ▼
+FoodWheels Admin App
+     │
+     ▼
+Firebase Authentication
+     │
+     ▼
+Firebase Realtime Database
+     │
+ ┌────┴────┐
+ ▼         ▼
+Orders   Vendors
+ ▼         ▼
+Menus   Restaurants
+```
 
+---
+
+# 👥 User Roles
+
+## 🔹 Super Admin
+
+- Complete platform control
+- Vendor approval
+- Analytics access
+- Restaurant management
+
+## 🔹 Vendor Admin
+
+- Menu management
+- Order handling
+- Profile updates
+
+## 🔹 Delivery Coordinator *(Planned)*
+
+- Delivery assignment
+- Rider management
+- Dispatch monitoring
+
+---
+
+
+# 🚀 Future Enhancements
+
+- Analytics Dashboard
+- Push Notifications
+- Role-Based Access Control
+- Delivery Tracking System
+- Revenue Reports
+- Inventory Monitoring
+- Cloud Functions Integration
+- Performance Optimization
+
+---
+
+# 🎯 Learning Outcomes
+
+This project helped strengthen understanding of:
+
+- Android Application Development
+- Firebase Integration
+- Realtime Database Design
+- Authentication Systems
+- Mobile Architecture Patterns
+- Scalable Application Development
+
+---
+
+# 📂 Repository Structure
+
+
+# 👨‍💻 Author
+
+### Vaibhav Khandelwal
+
+Computer Science Engineering Undergraduate
+
+📧 vaibhavkhandelwal2408@gmail.com
+
+🔗 LinkedIn  
+https://www.linkedin.com/in/vaibhavkhandelwal-cse/
+
+🔗 GitHub  
+https://github.com/VAIBHAVKHANDELWA
+
+---
+
+## ⭐ Support
+
+If you found this project interesting, consider giving it a **star**.
+
+It motivates further development and improvements.
